@@ -54,13 +54,37 @@ const generateTemplate = employeeArray =>{
 
                 </ul>
             </div>
+         
             `
-        }
+              ////testing intern
+        } else if
+            (currEmpl.getRole() == "Intern") {`
+                 <div class="card  mb-4 border-primary" style="width: 18rem;">
+                <div class="card-body bg-primary text-light">
+                    <h3 class="card-title">${currEmpl.getName()}</h3>
+                    <div class="personTitle">
+                        <div class="nameCard">
+                            <i class="fas fa-user-graduate" id="icon"></i>
+                            <h3> Intern</h3>
+                        </div>
+            
+                    </div>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">ID:${currEmpl.getId()}</li>
+                    <li class="list-group-item">Email: <a href="mailto:${currEmpl.getEmail()}">${currEmpl.getEmail()}</a></li>
+            
+                    <li class="list-group-item">Github: <a href="https://github.com/${currEmpl.getSchool()}" target="_blank">${currEmpl.getSchool()}</a>
+            
+                </ul>
+            </div>`
 
-    
+            }
 
     })
 return htmlTemplate+=`
+
+
  </div >
 
 
