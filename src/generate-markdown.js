@@ -22,7 +22,7 @@ const generateTemplate = employeeArray =>{
 
 <body>
     <header>
-        <h1 class="page-title text-white bg-secondary py-2 px-3">My Team</h1>
+        <h1 class="page-title text-white bg-danger py-2 px-3">My Team</h1>
 
     </header>
     <div class="container">
