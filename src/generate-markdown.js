@@ -1,8 +1,8 @@
 const fs = require('fs');
 
 const generateTemplate = employeeArray =>{
-    console.log(employeeArray)
-    console.log("this works")
+    // console.log(employeeArray)
+    // console.log("this works")
     let htmlTemplate=`
     <!DOCTYPE html>
 <html lang="en">

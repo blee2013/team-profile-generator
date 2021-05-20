@@ -12,7 +12,7 @@ This application that is built with a Node.js command-line application that take
 
 This application allows you to enter information about your team and then generate a HTML page to view your team. 
 
-Demo Video: 
+Demo Video: https://youtu.be/yYj6OTAHtCc
 
 ![Preview ](/assets/team-profile-sample.png)
 
