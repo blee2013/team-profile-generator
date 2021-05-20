@@ -56,9 +56,10 @@ const generateTemplate = employeeArray =>{
             </div>
          
             `
-              ////testing intern
+            //Intern 
         } else if
-            (currEmpl.getRole() == "Intern") {`
+            (currEmpl.getRole() == "Intern") {
+                htmlTemplate +=`
                  <div class="card  mb-4 border-primary" style="width: 18rem;">
                 <div class="card-body bg-primary text-light">
                     <h3 class="card-title">${currEmpl.getName()}</h3>
@@ -79,6 +80,26 @@ const generateTemplate = employeeArray =>{
                 </ul>
             </div>`
 
+        } else if
+            (currEmpl.getRole() == "Manager"){
+            htmlTemplate +=`<div class="card mb-4 border-primary" style="width: 18rem;">
+                <div class="card-body bg-primary text-light">
+                    <h3 class="card-title">${currEmpl.getName()}</h3>
+                    <div class="personTitle">
+                        <div class="nameCard">
+                            <i class="fas fa-coffee" id="icon"></i>
+                            <h3> Manager</h3>
+                        </div>
+
+                    </div>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">ID: ${currEmpl.getId()}</li>
+                    <li class="list-group-item">Email: <a href="mailto:${currEmpl.getEmail()}">${currEmpl.getEmail()}</a></li>
+                    <li class="list-group-item">Office Number: 1</li>
+
+                </ul>
+            </div>`
             }
 
     })
